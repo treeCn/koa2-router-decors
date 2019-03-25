@@ -6,7 +6,7 @@
  * @Company:
  * @LastEditors: 水痕
  * @Date: 2019-03-23 10:52:43
- * @LastEditTime: 2019-03-25 21:00:00
+ * @LastEditTime: 2019-03-25 21:15:27
  */
 import { resolve } from 'path';
 import Route from './../../../dist';
@@ -25,7 +25,7 @@ const dir = path => resolve(__dirname, path);
  * @return: 
  */
 export default (app) => {
-  const apiPath = dir('../controllers');
+  const apiPath = dir('../controllers/*');
   const route = new Route(app, apiPath, API_VERSION);
   route.init();
 };

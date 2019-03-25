@@ -1,6 +1,6 @@
 {
   "name": "koa2-router-decors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "koa2路由装饰器",
   "main": "dist/index.js",
   "scripts": {
