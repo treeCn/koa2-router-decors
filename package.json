@@ -1,10 +1,10 @@
 {
   "name": "koa2-router-decors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "koa2路由装饰器",
   "main": "dist/index.js",
   "scripts": {
-    "build": "babel index.js --out-dir dist"
+    "build": "babel lib --out-dir dist"
   },
   "keywords": [
     "koa",

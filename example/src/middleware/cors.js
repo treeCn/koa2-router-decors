@@ -6,7 +6,7 @@
  * @Company: 
  * @LastEditors: 水痕
  * @Date: 2019-03-07 11:08:03
- * @LastEditTime: 2019-03-25 16:59:11
+ * @LastEditTime: 2019-03-25 20:31:29
  */
 
 const cors = require('koa2-cors');
@@ -21,7 +21,7 @@ export default async (ctx, next) => {
 		exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'],
 		maxAge: 5,
 		credentials: true,
-		allowMethods: ['GET', 'POST', 'DELETE', 'PUT'],
+		allowMethods: ['HEAD', 'OPTIONS', 'GET', 'PUT', 'PATCH', 'POST', 'DELETE'],
 		allowHeaders: ['Content-Type', 'Authorization', 'Accept'],
 	});
 	await next();

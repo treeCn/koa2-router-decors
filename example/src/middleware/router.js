@@ -6,10 +6,11 @@
  * @Company:
  * @LastEditors: 水痕
  * @Date: 2019-03-23 10:52:43
- * @LastEditTime: 2019-03-25 16:58:03
+ * @LastEditTime: 2019-03-25 21:00:00
  */
 import { resolve } from 'path';
-import Route from 'koa2-router-decors';
+import Route from './../../../dist';
+// 可以写到config中统一配置
 const API_VERSION = '/api/v1';
 /**
  * @Description: 反转路径的方法
@@ -24,7 +25,7 @@ const dir = path => resolve(__dirname, path);
  * @return: 
  */
 export default (app) => {
-	const apiPath = dir('../controllers/*');
-	const router = new Route(app, apiPath, API_VERSION);
-	router.init();
+  const apiPath = dir('../controllers');
+  const route = new Route(app, apiPath, API_VERSION);
+  route.init();
 };
