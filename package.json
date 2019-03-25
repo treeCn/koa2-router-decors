@@ -1,0 +1,37 @@
+{
+  "name": "koa2-router-decors",
+  "version": "0.0.1",
+  "description": "koa2路由装饰器",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "koa",
+    "koa2",
+    "koa-router",
+    "koa-router-decorator"
+  ],
+  "homepage": "https://github.com/kuangshp/koa2-router-decors",
+  "author": "kuangshp@126.com",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.3",
+    "koa-router": "^7.4.0",
+    "loadsh": "0.0.4",
+    "ramda": "^0.26.1",
+    "@babel/polyfill": "^7.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "@babel/runtime": "^7.3.4",
+    "apidoc": "^0.17.7",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "editorconfig": "^0.15.3",
+    "eslint": "^5.15.3"
+  }
+}
