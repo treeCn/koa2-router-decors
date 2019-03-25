@@ -9,10 +9,10 @@ export default class ApiError extends Error {
    * @param {string} msg 错误信息
    * @param {string} desc 错误描述
    */
-  constructor(code = 1000, msg = '', desc = '') {
-    super();
-    this.code = code;
-    this.msg = msg;
-    this.desc = desc;
-  }
+	constructor(code = 1000, msg = '', desc = '') {
+		super();
+		this.code = code;
+		this.msg = msg;
+		this.desc = desc;
+	}
 }

@@ -5,9 +5,9 @@ import UserServer from '../servers/user/user-server';
 
 @controller('/user')
 export class UserController extends BaseController {
-  constructor() {
-    super();
-  }
+	constructor() {
+		super();
+	}
 	/**
    * 
    * @api {post} /api/v1/user/create/ 添加用户
@@ -22,15 +22,15 @@ export class UserController extends BaseController {
    */
   @post('/create')
   @required({ body: ['username', 'mobile', 'password'] })
-  async createUser(ctx) {
-    const result = await UserServer.createUser(ctx.request.body);
-    ctx.success(result);
-  }
+	async createUser(ctx) {
+		const result = await UserServer.createUser(ctx.request.body);
+		ctx.success(result);
+	}
 
   @post('/update')
   async updateUserById(ctx) {
-    const result = await UserServer.updateUserById(ctx.request.body);
-    ctx.success(result);
+  	const result = await UserServer.updateUserById(ctx.request.body);
+  	ctx.success(result);
   }
 
   /**
@@ -43,10 +43,10 @@ export class UserController extends BaseController {
    */
   @get('/list')
   async getAllUser(ctx) {
-    try {
-      ctx.success(await UserServer.getAllUser());
-    } catch (e) {
-      console.error(e);
-    }
+  	try {
+  		ctx.success(await UserServer.getAllUser());
+  	} catch (e) {
+  		console.error(e);
+  	}
   }
 }

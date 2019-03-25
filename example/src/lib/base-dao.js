@@ -9,6 +9,6 @@
  * @LastEditTime: 2019-03-25 17:08:14
  */
 export default class BaseDao {
-  constructor() {
-  }
+	constructor() {
+	}
 }

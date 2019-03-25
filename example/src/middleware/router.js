@@ -24,7 +24,7 @@ const dir = path => resolve(__dirname, path);
  * @return: 
  */
 export default (app) => {
-  const apiPath = dir('../controllers/*');
-  const router = new Route(app, apiPath, API_VERSION);
-  router.init();
+	const apiPath = dir('../controllers/*');
+	const router = new Route(app, apiPath, API_VERSION);
+	router.init();
 };
